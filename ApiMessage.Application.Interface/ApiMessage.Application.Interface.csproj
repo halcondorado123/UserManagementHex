@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ApiMessage.Application.DTO\ApiMessage.Application.DTO.csproj" />
+    <ProjectReference Include="..\ApiMessage.Models\ApiMessage.Domain.Entities.csproj" />
+    <ProjectReference Include="..\ApiMessage.Transversal.Common\ApiMessage.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
