@@ -1,0 +1,26 @@
+
+<<DML APIMessage>>
+
+
+INSERT INTO USU.UserInfoME (FullName, PhoneNumber, Email)
+VALUES
+('John Doe', '555-1234', 'john.doe@example.com'),
+('Jane Smith', '555-5678', 'jane.smith@example.com'),
+('Alice Johnson', '555-8765', 'alice.johnson@example.com'),
+('Bob Brown', '555-2345', 'bob.brown@example.com'),
+('Charlie White', '555-3456', 'charlie.white@example.com'),
+('David Green', '555-4567', 'david.green@example.com'),
+('Eva Black', '555-6789', 'eva.black@example.com'),
+('Frank Blue', '555-7890', 'frank.blue@example.com'),
+('Grace Pink', '555-8901', 'grace.pink@example.com'),
+('Hank Yellow', '555-9012', 'hank.yellow@example.com'),
+('Ivy Red', '555-0123', 'ivy.red@example.com'),
+('Jack Purple', '555-1234', 'jack.purple@example.com'),
+('Kathy Gray', '555-2345', 'kathy.gray@example.com'),
+('Louis Gold', '555-3456', 'louis.gold@example.com'),
+('Mona Silver', '555-4567', 'mona.silver@example.com'),
+('Nancy Copper', '555-5678', 'nancy.copper@example.com'),
+('Oscar Bronze', '555-6789', 'oscar.bronze@example.com'),
+('Paul Iron', '555-7890', 'paul.iron@example.com'),
+('Quincy Steel', '555-8901', 'quincy.steel@example.com'),
+('Rachel Wood', '555-9012', 'rachel.wood@example.com');
