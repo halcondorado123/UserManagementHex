@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiMessage.Application.DTO\ApiMessage.Application.DTO.csproj" />
-    <ProjectReference Include="..\ApiMessage.Models\ApiMessage.Domain.Entities.csproj" />
     <ProjectReference Include="..\ApiMessage.Transversal.Common\ApiMessage.Transversal.Common.csproj" />
   </ItemGroup>
 

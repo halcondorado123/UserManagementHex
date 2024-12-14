@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage", "ApiMessage\ApiMessage.csproj", "{06FD512C-E97D-4069-8D56-8AE296862D7D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage", "ApiMessage\ApiMessage.csproj", "{06FD512C-E97D-4069-8D56-8AE296862D7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Infraestructure.Data", "DataAccess\ApiMessage.Infraestructure.Data.csproj", "{9AC98152-40ED-4D10-BC20-8EDCE8A4DCDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Infraestructure.Data", "DataAccess\ApiMessage.Infraestructure.Data.csproj", "{9AC98152-40ED-4D10-BC20-8EDCE8A4DCDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Domain.Entities", "ApiMessage.Models\ApiMessage.Domain.Entities.csproj", "{1D6740D6-CB73-4DDA-90F1-F2E4FE9CB692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Domain.Entities", "ApiMessage.Models\ApiMessage.Domain.Entities.csproj", "{1D6740D6-CB73-4DDA-90F1-F2E4FE9CB692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Testing", "Testing\ApiMessage.Testing.csproj", "{868313AB-8663-4903-8C6A-EB823F4361B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Testing.Test", "Testing\ApiMessage.Testing.Test.csproj", "{868313AB-8663-4903-8C6A-EB823F4361B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Tranversal.Mapper", "ApiMessage.Tranversal\ApiMessage.Tranversal.Mapper.csproj", "{95AB1996-E599-4FBC-B764-710EE08F7238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Tranversal.Mapper", "ApiMessage.Tranversal\ApiMessage.Tranversal.Mapper.csproj", "{95AB1996-E599-4FBC-B764-710EE08F7238}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E803C72E-7B7B-4D3C-A634-3E22DA9D2E41}"
 EndProject
@@ -23,25 +23,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{F555
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transversal", "Transversal", "{232226BA-D4F9-43BC-85DD-719BB77241D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Application.DTO", "ApiMessage.Application.DTO\ApiMessage.Application.DTO.csproj", "{AF7606E2-DB10-43E3-AFEF-2551D11A85CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Application.DTO", "ApiMessage.Application.DTO\ApiMessage.Application.DTO.csproj", "{AF7606E2-DB10-43E3-AFEF-2551D11A85CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Application.Interface", "ApiMessage.Application.Interface\ApiMessage.Application.Interface.csproj", "{D67FEAAD-9AF0-4A1D-9B22-F9EE838BF918}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Application.Interface", "ApiMessage.Application.Interface\ApiMessage.Application.Interface.csproj", "{D67FEAAD-9AF0-4A1D-9B22-F9EE838BF918}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Application.Main", "ApiMessage.Application.Main\ApiMessage.Application.Main.csproj", "{8E49E9F8-25BC-4FA2-88AF-B5950E5B6582}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Application.Main", "ApiMessage.Application.Main\ApiMessage.Application.Main.csproj", "{8E49E9F8-25BC-4FA2-88AF-B5950E5B6582}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{4CAE40B0-4133-4EDD-AFBE-5D73D4027EC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Transversal.Common", "ApiMessage.Transversal.Common\ApiMessage.Transversal.Common.csproj", "{5BA7CEC8-4ECB-4F94-8CA6-63CDE24879A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Transversal.Common", "ApiMessage.Transversal.Common\ApiMessage.Transversal.Common.csproj", "{5BA7CEC8-4ECB-4F94-8CA6-63CDE24879A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Transversal.Logging", "ApiMessage.Transversal.Logging\ApiMessage.Transversal.Logging.csproj", "{C633A296-BE44-4C6D-B60C-02F8CAC24DEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Transversal.Logging", "ApiMessage.Transversal.Logging\ApiMessage.Transversal.Logging.csproj", "{C633A296-BE44-4C6D-B60C-02F8CAC24DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiResponse.Domain.Interface", "ApiResponse.Domain.Interface\ApiResponse.Domain.Interface.csproj", "{9EA9E12A-5FE9-47AC-82FE-EFF0D89481AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResponse.Domain.Interface", "ApiResponse.Domain.Interface\ApiResponse.Domain.Interface.csproj", "{9EA9E12A-5FE9-47AC-82FE-EFF0D89481AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Domain.Core", "ApiMessage.Domain.Core\ApiMessage.Domain.Core.csproj", "{FEC5EC3E-B090-4F4B-89B9-95C6107CE074}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Domain.Core", "ApiMessage.Domain.Core\ApiMessage.Domain.Core.csproj", "{FEC5EC3E-B090-4F4B-89B9-95C6107CE074}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Infraestructure.Interface", "ApiMessage.Infraestructure.Interface\ApiMessage.Infraestructure.Interface.csproj", "{8FF01E16-537D-4931-9314-DC8ED88FDF6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Infraestructure.Interface", "ApiMessage.Infraestructure.Interface\ApiMessage.Infraestructure.Interface.csproj", "{8FF01E16-537D-4931-9314-DC8ED88FDF6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiMessage.Infraestructure.Repository", "ApiMessage.Infraestructure.Repository\ApiMessage.Infraestructure.Repository.csproj", "{7CB0A1E0-B357-42C8-A4F8-F47D860E0048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiMessage.Infraestructure.Repository", "ApiMessage.Infraestructure.Repository\ApiMessage.Infraestructure.Repository.csproj", "{7CB0A1E0-B357-42C8-A4F8-F47D860E0048}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

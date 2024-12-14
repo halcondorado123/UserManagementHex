@@ -1,5 +1,5 @@
-﻿using ApiMessage.Transversal.Common;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
+using ApiMessage.Transversal.Common;
 
 namespace ApiMessage.Transversal.Logging
 {
@@ -13,18 +13,18 @@ namespace ApiMessage.Transversal.Logging
         }
 
         public void LogInformation(string message, params object[] args)
-        { 
+        {
             _logger.LogInformation(message, args);
         }
 
         public void LogWarning(string message, params object[] args)
         {
-            _logger.LogInformation(message, args);
+            _logger.LogWarning(message, args);
         }
 
         public void LogError(string message, params object[] args)
         {
-            _logger.LogInformation(message, args);
+            _logger.LogError(message, args);
         }
     }
 }

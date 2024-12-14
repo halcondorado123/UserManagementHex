@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApiMessage.Infraestructure.Interface\ApiMessage.Infraestructure.Interface.csproj" />
+    <ProjectReference Include="..\ApiResponse.Domain.Interface\ApiResponse.Domain.Interface.csproj" />
   </ItemGroup>
 
 </Project>
