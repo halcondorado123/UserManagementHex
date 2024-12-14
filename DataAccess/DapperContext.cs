@@ -13,7 +13,6 @@ public class DapperContext
         _sqlConnection = configuration.GetConnectionString("MyLocalConnection");
     }
 
-    // Método para crear la conexión SQL de manera perezosa cuando se necesite
     public IDbConnection CreateSqlConnection()
     {
         return new SqlConnection(_sqlConnection);

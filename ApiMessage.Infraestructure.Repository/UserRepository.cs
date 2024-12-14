@@ -1,6 +1,4 @@
 ﻿using ApiMessage.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Dapper;
 using System.Data.SqlClient;
 using ApiMessage.Data;
@@ -21,7 +19,7 @@ namespace ApiMessage.Infraestructure.Repository
         {
             using (var connection = _context.CreateSqlConnection())
             {
-                var query = "SELECT * FROM USU.vwUserInfoME";  // Aquí no filtras por ID, sino que obtienes todos los registros
+                var query = "SELECT * FROM USU.vwUserInfoME";
                 return await connection.QueryAsync<UserInfoME>(query);
             }
         }
@@ -42,17 +40,14 @@ namespace ApiMessage.Infraestructure.Repository
             }
         }
 
-
-        // Método para crear un cliente
         public async Task<UserInfoME> CreateAsync(UserInfoME client)
         {
             try
             {
                 using (var connection = _context.CreateSqlConnection())
                 {
-                    var query = "USU.CreateUserInfoME"; // Nombre del procedimiento almacenado
+                    var query = "USU.CreateUserInfoME";
 
-                    // Parámetros que se enviarán al procedimiento almacenado
                     var parameters = new
                     {
                         FullName = client.FullName,
@@ -63,32 +58,29 @@ namespace ApiMessage.Infraestructure.Repository
                     var result = await connection.ExecuteScalarAsync<int>(query, parameters, commandType: CommandType.StoredProcedure);
                     if (result > 0)
                     {
-                        return client;  // Procedimiento ejecutado correctamente
+                        return client;
                     }
 
-                    return client; // Retorna el cliente creado si la inserción fue exitosa
+                    return client;
                 }
             }
             catch (SqlException sqlEx)
             {
-                // Manejo de errores específicos de SQL
                 throw new ApplicationException("Error en la base de datos al crear el cliente.", sqlEx);
             }
             catch (Exception ex)
             {
-                // Manejo de errores generales
                 throw new ApplicationException("Error al crear el cliente.", ex);
             }
         }
 
-        // Método para actualizar un cliente
         public async Task<UserInfoME> UpdateClientAsync(UserInfoME client)
         {
             try
             {
                 using (var connection = _context.CreateSqlConnection())
                 {
-                    var query = "USU.UpdateUserInfoME"; // Nombre del procedimiento almacenado
+                    var query = "USU.UpdateUserInfoME"; 
 
                     var parameters = new
                     {
@@ -98,16 +90,15 @@ namespace ApiMessage.Infraestructure.Repository
                         Email = client.Email
                     };
 
-                    // Ejecutar el procedimiento almacenado
                     var result = await connection.ExecuteScalarAsync<int>(query, parameters, commandType: CommandType.StoredProcedure);
 
                     if (result > 0)
                     {
-                        return client;  // Si la actualización fue exitosa, devolvemos el cliente actualizado
+                        return client;
                     }
                     else
                     {
-                        return null;  // Si no hubo ninguna fila afectada, retornamos null
+                        return null;
                     }
                 }
             }
@@ -116,30 +107,24 @@ namespace ApiMessage.Infraestructure.Repository
                 throw new ApplicationException("Error al actualizar el cliente", ex);
             }
         }
-
-
-
-        // Método para eliminar un cliente por ID
         public async Task<bool> DeleteClientAsync(int id)
         {
             try
             {
                 using (var connection = _context.CreateSqlConnection())
                 {
-                    var query = "USU.DeleteUserInfoME"; // Nombre del procedimiento almacenado
+                    var query = "USU.DeleteUserInfoME";
                     var parameters = new { UserId = id };
 
                     var result = await connection.ExecuteAsync(query, parameters, commandType: CommandType.StoredProcedure);
 
-                    // Si el valor de result es mayor que 0, significa que se eliminó al menos un registro
                     return result > 0;
                 }
             }
             catch (Exception ex)
             {
-                // Manejo de errores, puedes loguear el error para saber qué pasa
                 Console.WriteLine($"Error en la eliminación: {ex.Message}");
-                return false;  // Devuelves false en caso de error
+                return false;
             }
         }
     }

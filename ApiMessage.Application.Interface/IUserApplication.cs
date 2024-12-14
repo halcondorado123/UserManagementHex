@@ -1,9 +1,4 @@
 ﻿using ApiMessage.Transversal.Common;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ApiMessage.Application.DTO.UserDTO;
 
 namespace ApiMessage.Application.Interface

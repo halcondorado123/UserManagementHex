@@ -4,9 +4,6 @@ using ApiResponse.Domain.Interface;
 using APIUserValidation.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace ApiMessage.Api.Controllers
 {
@@ -16,7 +13,7 @@ namespace ApiMessage.Api.Controllers
     {
         private readonly IUserDomain _userDomain;
 
-        // Simulamos una base de datos con una lista en memoria
+        // Simulamos una base de datos con una lista en memoria //
         private static List<UserInfoME> users = new List<UserInfoME>();
 
         private readonly IAppLogger<UserController> _logger;
@@ -104,13 +101,11 @@ namespace ApiMessage.Api.Controllers
         [ProducesResponseType(500)]
         public async Task<IActionResult> UpdateClient([FromBody] UserInfoME client)
         {
-            // Validación de que el cliente no sea nulo
             if (client == null)
             {
                 return BadRequest("Los datos del cliente son inválidos (el cliente está vacío).");
             }
 
-            // Validación de que el UserId del cliente es válido (mayor a 0)
             if (client.UserId <= 0)
             {
                 return BadRequest("El ID del cliente no es válido.");
@@ -118,14 +113,12 @@ namespace ApiMessage.Api.Controllers
 
             try
             {
-                // Llamar al dominio para actualizar el cliente
                 var updatedClient = await _userDomain.UpdateClientAsync(client);
                 if (updatedClient == null)
                 {
                     return NotFound("Cliente no encontrado para actualizar.");
                 }
 
-                // Retornar el cliente actualizado
                 return Ok(updatedClient);
             }
             catch (Exception ex)
@@ -175,13 +168,9 @@ namespace ApiMessage.Api.Controllers
                 return BadRequest("Datos del usuario inválidos.");
             }
 
-            // Guardamos los datos en la "base de datos" simulada
             users.Add(userRequest);
-
-            // Simulamos el envío de un mensaje - se registra en los logs del sistema, y en traza temporal en un archivo txt
             _logger.LogInformation("Mensaje enviado a {FullName} con el número {PhoneNumber}: Bienvenido/a!", userRequest.FullName, userRequest.PhoneNumber);
 
-            // Retornamos una respuesta exitosa con los datos recibidos
             return Ok(new { Message = "Usuario creado con éxito", User = userRequest });
         }
     }

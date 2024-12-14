@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace ApiMessage.Models
+﻿namespace ApiMessage.Models
 {
     public class UserInfoME
     {

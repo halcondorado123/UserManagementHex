@@ -6,7 +6,6 @@ using ApiMessage.Infraestructure.Repository;
 using ApiMessage.Transversal.Common;
 using ApiMessage.Transversal.Logging;
 using ApiResponse.Domain.Interface;
-using System.Runtime.CompilerServices;
 
 namespace ApiMessage.Modules
 {
